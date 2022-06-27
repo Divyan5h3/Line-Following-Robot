@@ -45,7 +45,7 @@ void loop(){
   }
   //line detected by left sensor
   else if(digitalRead(left)==0 && !analogRead(right)==0){
-    //turn left
+    //turns left
     motor1.run(FORWARD);
     motor1.setSpeed(200);
     motor2.run(FORWARD);
@@ -58,7 +58,7 @@ void loop(){
   }
   //line detected by right sensor
   else if(!digitalRead(left)==0 && digitalRead(right)==0){
-    //turn right
+    //turns right
     motor1.run(BACKWARD);
     motor1.setSpeed(200);
     motor2.run(BACKWARD);
